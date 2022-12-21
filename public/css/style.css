@@ -18,10 +18,18 @@ input{
     text-align: center;
     background-color: lightpink;
 }
+.gnb a{
+    margin-right: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
 .box{
     text-align: center;
     background-color: lightgoldenrodyellow;
 }
 .list{
     background-color: lightblue;
+    background-image: url(../images/005401.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
 }
