@@ -39,12 +39,12 @@ ul li{
     background-repeat: no-repeat;
     background-position-x: right;
 }
-.list h2{
+h2{
     margin-left: 20px;
 }
 .list1{
-    background-color: rgba(184, 248, 184, 0.5);
-    background-image: url(https://data1.pokemonkorea.co.kr/newdata/pokedex/full/002501.png);
+    background-color: rgba(237, 216, 250, 0.5);
+    background-image: url(https://data1.pokemonkorea.co.kr/newdata/pokedex/full/005201.png);
     background-repeat: no-repeat;
     background-position-x: right;
 }
