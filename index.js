@@ -43,6 +43,16 @@ app.post('/create', function(req, res){
     res.redirect('/');
 })
 
+//delete 라우팅(글 삭제요청)
+app.post('/delete/:id', function(req, res){
+    const id = req.params.id;
+    console.log(id);
+    //post배열의 값을 삭제
+    posts.splice(id, 1);
+    fs.writeFileSync('postDB.json', JSON.stringify(posts));
+    res.redirect('/');
+})
+
 app.post('/create1', function(req, res){
     const memos = req.body.post1;
     memo.push(memos);

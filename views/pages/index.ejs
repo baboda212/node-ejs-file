@@ -26,8 +26,14 @@
         <% for (let i = 0; i < posts.length; i++){ %>
             <ul>
                 <li>
-                    <%= [i] %> .
-                    <%= posts[i]  %>
+                    <div>
+                        <%= [i] %> .
+                        <%= posts[i]  %>
+                    </div>
+                    <!-- <a href="/delete">삭제</a> -->
+                    <form action="/delete/<%= [i] %>" method="post">
+                        <button class="dbtn" type="submit">삭제</button>
+                    </form>
                 </li>
             </ul>
         <% } %> 

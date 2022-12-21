@@ -58,3 +58,14 @@ h2{
     text-align: center;
     background-color: rgb(210, 232, 250);
 }
+.list ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.dbtn{
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 5px;
+}
