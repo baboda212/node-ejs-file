@@ -21,30 +21,30 @@
         </form>
     </div>
     <section class="container list">
-        <!-- 올림차순 -->
+        <!-- 차순 -->
         <h2>글 목록</h2>
         <% for (let i = 0; i < posts.length; i++){ %>
             <ul>
                 <li>
-                    <%= [i] %>
+                    <%= [i] %> .
                     <%= posts[i]  %>
                 </li>
             </ul>
         <% } %> 
     </section>
     <section class="container list0">
-        <!-- 내림차순 -->
+        <!-- 역순 -->
         <h2>글 목록</h2>
         <% for (let i = posts.length; i >= 0; i--){ %>
             <ul>
                 <li>
-                    <%= [i] %>
+                    <%= [i] %> .
                     <%= posts[i]  %>
                 </li>
             </ul>
         <% } %> 
     </section>
-    
+
     <div class="container box2">
         <h1>게시판</h1>
         <form action="/create1" method="post">
