@@ -1,0 +1,13 @@
+/* style.css */
+a{
+    color: red;
+}
+.container{
+    width: 80%;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 1rem;
+}
+input{
+    padding: 5px;
+}
