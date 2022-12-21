@@ -1,13 +1,27 @@
 /* style.css */
 a{
-    color: red;
+    color: #000;
 }
 .container{
     width: 80%;
     border: 1px solid #ccc;
     margin: 0 auto;
     padding: 1rem;
+    margin-bottom: 10px;
+    border-radius: 15px;
 }
 input{
     padding: 5px;
+    width: 35rem;
+}
+.gnb{
+    text-align: center;
+    background-color: lightpink;
+}
+.box{
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+}
+.list{
+    background-color: lightblue;
 }

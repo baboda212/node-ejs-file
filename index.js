@@ -10,7 +10,7 @@ const readfile = fs.readFileSync('postDB.json', 'utf-8');
 
 //오브젝트 코드로 변환
 const jsonData = JSON.parse(readfile);
-console.log(jsonData);
+//console.log(jsonData);
 //post에 배열값을 추가(복사)
 posts = [...jsonData];
 
@@ -34,10 +34,10 @@ app.post('/create', function(req, res){
     const 글 = req.body.post;
     //posts 배열 에 글 추가
     posts.push(글);
-    console.log('posts=', posts );
-    //DB 파일에 글 저장
+    //console.log('posts=', posts );
+    //DB 파일에 글 저장(데이터를 저장할 때 JSON 스트링 파일로 저장해!)
     fs.writeFileSync('postDB.json', JSON.stringify(posts));
-    console.log(posts)
+    //console.log(posts)
     //홈게시판으로이동(화면에 보이기)
     res.redirect('/');
 })
