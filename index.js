@@ -4,6 +4,7 @@ const ejs = require('ejs');
 const fs = require('fs');
 
 let posts = []; //글(임시적으로 사용하는 변수) 데이터
+let memo = ["서버 닫으면 사라지는 메모",];
 
 //파일을 불러오기(읽기)
 const readfile = fs.readFileSync('postDB.json', 'utf-8');
@@ -26,7 +27,7 @@ app.use(express.urlencoded({extended: true}));
 
 //home 라우팅
 app.get('/', function(요청, 응답){
-    응답.render('pages/index.ejs',{ posts })
+    응답.render('pages/index.ejs',{ posts, memo })
 })
 
 //create라우팅
@@ -39,6 +40,12 @@ app.post('/create', function(req, res){
     fs.writeFileSync('postDB.json', JSON.stringify(posts));
     //console.log(posts)
     //홈게시판으로이동(화면에 보이기)
+    res.redirect('/');
+})
+
+app.post('/create1', function(req, res){
+    const memos = req.body.post1;
+    memo.push(memos);
     res.redirect('/');
 })
 

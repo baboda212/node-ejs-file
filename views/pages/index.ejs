@@ -28,5 +28,22 @@
             </ul>
         <% } %>  
     </section>
+    <div class="container box2">
+        <h1>게시판</h1>
+        <form action="/create1" method="post">
+            <input type="text" name="post1" placeholder="글을 입력하세요">
+            <button type="submit">글쓰기</button>
+        </form>
+    </div>
+    <section class="container list1">
+        <h2>글 목록</h2>
+        <% for(let a = 0; a < memo.length; a++){ %>
+            <ul>
+                <li><%= memo[a]  %></li>
+            </ul>
+        
+        <% } %> 
+         
+    </section>
 </body>
 </html>

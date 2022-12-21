@@ -26,7 +26,7 @@ input{
 .gnb a:last-child{
     margin-right: 0;
 }
-.box{
+.box, .box2{
     text-align: center;
     background-color: lightgoldenrodyellow;
 }
@@ -38,4 +38,10 @@ input{
 }
 .list h2{
     margin-left: 20px;
+}
+.list1{
+    background-color: rgba(184, 248, 184, 0.5);
+    background-image: url(https://data1.pokemonkorea.co.kr/newdata/pokedex/full/002501.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
 }
