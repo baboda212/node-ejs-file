@@ -29,7 +29,7 @@ ul li{
 .gnb a:last-child{
     margin-right: 0;
 }
-.box, .box2{
+.box {
     text-align: center;
     background-color: lightgoldenrodyellow;
 }
@@ -53,4 +53,8 @@ h2{
     background-image: url(https://data1.pokemonkorea.co.kr/newdata/pokedex/full/002501.png);
     background-repeat: no-repeat;
     background-position-x: right;
+}
+.box2{
+    text-align: center;
+    background-color: rgb(210, 232, 250);
 }
