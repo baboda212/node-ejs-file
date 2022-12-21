@@ -16,12 +16,15 @@ input{
 }
 .gnb{
     text-align: center;
-    background-color: lightpink;
+    background-color: rgb(255, 212, 219);
 }
 .gnb a{
     margin-right: 20px;
     font-weight: bold;
     text-decoration: none;
+}
+.gnb a:last-child{
+    margin-right: 0;
 }
 .box{
     text-align: center;
