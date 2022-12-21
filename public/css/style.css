@@ -36,3 +36,6 @@ input{
     background-repeat: no-repeat;
     background-position-x: right;
 }
+.list h2{
+    margin-left: 20px;
+}
