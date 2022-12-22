@@ -47,8 +47,10 @@ app.post('/create', function(req, res){
 app.post('/delete/:id', function(req, res){
     const id = req.params.id;
     console.log(id);
-    //post배열의 값을 삭제
+    //post배열의 값을 삭제(id값에 해당하는 posts 삭제)
     posts.splice(id, 1);
+    console.log(posts);
+    //db파일에 저장
     fs.writeFileSync('postDB.json', JSON.stringify(posts));
     res.redirect('/');
 })
