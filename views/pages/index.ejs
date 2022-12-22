@@ -30,7 +30,7 @@
                         <%= [i] %> .
                         <%= posts[i]  %>
                     </div>
-                    <!-- <a href="/delete">삭제</a> -->
+                    <!-- 삭제버튼 추가(배열번호값을 넣어준 후 선택된 배열번호만 삭제가능하도록 제작) -->
                     <form action="/delete/<%= [i] %>" method="post">
                         <button class="dbtn" type="submit">삭제</button>
                     </form>

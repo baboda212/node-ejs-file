@@ -28,6 +28,7 @@ app.use(express.urlencoded({extended: true}));
 //home 라우팅
 app.get('/', function(요청, 응답){
     응답.render('pages/index.ejs',{ posts, memo })
+    //응답시 덮어씌울 페이지 선정, 넣을 데이터 선정
 })
 
 //create라우팅
@@ -42,7 +43,6 @@ app.post('/create', function(req, res){
     //홈게시판으로이동(화면에 보이기)
     res.redirect('/');
 })
-
 //delete 라우팅(글 삭제요청)
 app.post('/delete/:id', function(req, res){
     const id = req.params.id;
@@ -55,6 +55,7 @@ app.post('/delete/:id', function(req, res){
     res.redirect('/');
 })
 
+//서버가 닫히면 데이터도 같이 지워지는 양식 라우팅
 app.post('/create1', function(req, res){
     const memos = req.body.post1;
     memo.push(memos);
@@ -66,7 +67,7 @@ app.get('/about', function(req, res){
     res.render('pages/about.ejs');
 })
 
-
+//localhost:3001로 지정
 const port = 3001;
 app.listen(port,() =>{
     console.log(`sever running at ${port}`);
